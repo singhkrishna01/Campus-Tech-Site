@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampusTech</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./assets/Logo.png" alt="CampusTech Logo" />
+      </div>
+      <div class="flex items-center gap-10">
+        <div class="hamburger" id="hamburger">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </div>
+
+        <ul class="nav-links flex items-center">
+          <li>
+            <a href="#"
+              >Solutions <img src="./assets/down-arrow.png" style="width: 30px" />
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              >Resources <img src="./assets/down-arrow.png" style="width: 30px" />
+            </a>
+          </li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <button id="dark-mode-toggle"></button>
+        <button class="login-btn">Login</button>
+
+        <div class="mobile-menu" id="mobile-menu">
+          <img src="./assets/icons8-close (1).svg" class="close-mobile-menu" />
+          <ul class="mobile-nav-links">
+            <li>
+              <img
+                class="mobile-menu-logo"
+                src="./assets/Logo.png"
+                alt="CampusTech Logo"
+              />
+            </li>
+            <li>
+              <a href="#">Solutions</a>
+            </li>
+            <li>
+              <a href="#">Resources</a>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><button class="login-btn">Login</button></li>
+          </ul>
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+      </div>
+    </nav>
+
+    <!-- Slider Container -->
+    <div class="slider-container opacity-0 animate-fade-up">
+      <!-- Page 1: Hero Section -->
+      <section class="hero slide active">
+        <div class="hero-content">
+          <h1>
+            A <span class="highlight">power-packed solution</span> to streamline
+            all educational and institutional processes.
+          </h1>
+          <p>
+            Campus Tech is a robust solution packed with best-in-class software,
+            consulting, audits, and empowerment activities rolled into one for
+            your institution.
+          </p>
+          <div class="parent-ctn">
+            <button class="cta-btn">Get a Demo</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="./assets/logo1.png" alt="Illustration" />
+        </div>
+      </section>
+
+      <!-- Page 2: Accreditation Section -->
+      <section class="accreditation slide">
+        <div class="accreditation-content">
+          <h1>
+            Enables
+            <span class="highlight"
+              >efficient <br />
+              segregation
+            </span>
+            of tasks
+          </h1>
+          <p>
+            Campus Tech presents you with multiple dashboards to review the
+            status of various accreditation tasks, including the tasks that are
+            overdue, non-compliant, or need attention.
+          </p>
+          <div class="parent-ctn">
+            <button class="cta-btn">Accreditation & Compliance</button>
+          </div>
+        </div>
+        <div class="accreditation-image">
+          <img src="./assets/logo2.png" alt="Accreditation Illustration" />
+        </div>
+      </section>
+
+      <!-- Page 3: Accreditation Requirements Section -->
+      <section class="requirements slide">
+        <div class="requirements-content">
+          <h1>
+            Helps cater to
+            <span class="highlight"> accreditation requirements </span>
+          </h1>
+          <p>
+            Computs Tech has created an associated full-fledged and robust
+            campus automation software along with a dedicated mobile app for
+            students that can cater to multiple accreditation and compliance
+            requirements.
+          </p>
+          <div class="parent-ctn">
+            <button class="cta-btn">Accreditation & Compliance</button>
+          </div>
+        </div>
+        <div class="requirements-image">
+          <img src="./assets/logo3.png" alt="Requirements Illustration" />
+        </div>
+      </section>
+
+      <!-- Page 4: Live Reports Section -->
+      <section class="reports slide">
+        <div class="reports-content">
+          <h1>
+            <span class="highlight">Live reports </span> and
+            <span class="highlight">comparative analysis </span> made available
+          </h1>
+          <p>
+            Get live reports on data added for multiple accreditations.
+            All-based alerts for tracking of tasks assigned and completed.
+          </p>
+          <div class="parent-ctn">
+            <button class="cta-btn">Exam Management System</button>
+          </div>
+        </div>
+        <div class="reports-image">
+          <img src="./assets/logo4.png" alt="Reports Illustration" />
+        </div>
+      </section>
+    </div>
+
+    <!-- Carousel Indicators -->
+    <div class="carousel opacity-0 animate-fade-up">
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <div class="arrows">
+        <button class="arrow left">&#10094;</button>
+        <button class="arrow right">&#10095;</button>
+      </div>
+    </div>
+    <div>
+      <img class="bar" src="./assets/bar.png" alt="" />
+    </div>
+    <div class="super-container opacity-0 animate-fade-up">
+      <h1><strong>Learn more about</strong> <span>what we solve</span></h1>
+
+      <div class="container-wrapper">
+        <div class="container" id="scrollContainer">
+          <div class="container-child">
+            <div class="card">
+              <img src="./assets/icon1.png" alt="Accreditation" />
+              <h2>Accreditation & Compliance</h2>
+              <p>
+                Bring real-time monitoring for all users’ accreditation
+                requirements for continuous quality improvement.
+              </p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+          <div class="container-child">
+            <div class="card">
+              <img src="./assets/icon2.png" alt="ILMS" />
+              <h2>ILMS</h2>
+              <p>
+                Customize the learning system by giving users a unified platform
+                for all academic needs with easy-to-use technology.
+              </p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+
+          <div class="container-child">
+            <div class="card">
+              <img src="./assets/icon3.png" alt="Exam Management" />
+              <h2>Exam Management</h2>
+              <p>
+                Streamline the examination process with Live Proctoring and
+                Automated Examinations.
+              </p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+          <div class="container-child">
+            <div class="card">
+              <img src="./assets/icon1.png" alt="Accreditation" />
+              <h2>National Education Policy</h2>
+              <p>
+                Enable the formulation of syllabi as per the NEP guidelines and
+                identify new and diverse categories of courses.
+              </p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-progress">
+      <div class="scroll-bar" id="scrollBar"></div>
+    </div>
+
+    <div class="section-container opacity-0 animate-fade-up">
+      <!-- Left Content -->
+      <div>
+        <img class="elips" src="./assets/Ellipse 6.png" alt="" />
+      </div>
+      <div class="left-content">
+        <h1>
+          Why your <br />
+          educational <br />
+          <span
+            >institution needs<br />
+            Campus Tech</span
+          >
+        </h1>
+        <div class="btnn-wrapper">
+          <a href="#" class="btnn">About Us</a>
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="features">
+        <div class="feature">
+          <img src="./assets/noew.png" alt="Simple UI" />
+          <p>Simple and easy-to-use interface</p>
+        </div>
+        <div class="feature">
+          <img src="./assets/new2.png" alt="Dashboard" />
+          <p>Multi-institutional dashboard</p>
+        </div>
+        <div class="feature">
+          <img src="./assets/new3.png" alt="AI Alerts" />
+          <p>AI-based alerts for all activities to be conducted</p>
+        </div>
+        <div class="feature">
+          <img src="./assets/new4.png" alt="Track Learning" />
+          <p>Track learning behaviour and learning outcomes</p>
+        </div>
+        <div class="feature">
+          <img src="./assets/new5.png" alt="Compliance" />
+          <p>Build a new culture of compliance and accreditation</p>
+        </div>
+        <div class="feature">
+          <img src="./assets/new6.png" alt="Integration" />
+          <p>Integration with your campus website</p>
+        </div>
+      </div>
+      <div>
+        <img class="elips2" src="./assets/Ellipse 6 (1).png" alt="" />
+      </div>
+    </div>
+
+    <!--new section-->
+    <section class="trust-section opacity-0 animate-fade-up">
+      <h2>
+        The best in the<br />
+        country <span>trust us</span>
+      </h2>
+      <div class="stats">
+        <div class="stat">
+          <h3 class="orange">30</h3>
+          <p>Top Institutions</p>
+        </div>
+        <div class="stat">
+          <h3 class="green">13</h3>
+          <p>in A/A+/A++ Tier</p>
+        </div>
+        <div class="stat">
+          <h3 class="orange">3000</h3>
+          <p>Faculty Connect</p>
+        </div>
+        <div class="stat">
+          <h3 class="green">90,000</h3>
+          <p>Students Benefited</p>
+        </div>
+      </div>
+      <div class="logos">
+        <div class="logos-container">
+          <!-- First set of logos -->
+          <div class="flex spacing">
+            <img
+              class="logo"
+              src="./assets/bennet-remove.png"
+              alt="Bennett University"
+            />
+            <img
+              class="logo"
+              src="./assets/iit.png"
+              alt="Jadavpur University"
+            />
+            <img
+              class="logo"
+              src="https://upload.wikimedia.org/wikipedia/en/a/a7/West_Bengal_National_University_of_Juridical_Sciences_Logo.svg"
+              alt="NUJS"
+            />
+            <img
+              class="logo"
+              src="./assets/bennet-remove.png"
+              alt="Bennett University"
+            />
+            <img
+              class="logo"
+              src="./assets/iit.png"
+              alt="Jadavpur University"
+            />
+            <img
+              class="logo"
+              src="https://upload.wikimedia.org/wikipedia/en/a/a7/West_Bengal_National_University_of_Juridical_Sciences_Logo.svg"
+              alt="NUJS"
+            />
+          </div>
+
+          <!-- Duplicate set for seamless scrolling -->
+          <div class="flex spacing">
+            <img
+              class="logo"
+              src="./assets/bennet-remove.png"
+              alt="Bennett University"
+            />
+            <img
+              class="logo"
+              src="./assets/iit.png"
+              alt="Jadavpur University"
+            />
+            <img
+              class="logo"
+              src="https://upload.wikimedia.org/wikipedia/en/a/a7/West_Bengal_National_University_of_Juridical_Sciences_Logo.svg"
+              alt="NUJS"
+            />
+            <img
+              class="logo"
+              src="./assets/bennet-remove.png"
+              alt="Bennett University"
+            />
+            <img
+              class="logo"
+              src="./assets/iit.png"
+              alt="Jadavpur University"
+            />
+            <img
+              class="logo"
+              src="https://upload.wikimedia.org/wikipedia/en/a/a7/West_Bengal_National_University_of_Juridical_Sciences_Logo.svg"
+              alt="NUJS"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="img_bar">
+      <img class="barbar" src="./assets/image_bar.png" alt="image" />
+    </div>
+
+    <section class="upgrade-section opacity-0 animate-fade-up">
+      <div class="text-content">
+        <h1>
+          Ready to give your <br />
+          <span>institution an upgrade?</span>
+        </h1>
+        <div class="btnn-wrapper">
+          <a href="#" class="btnn">Contact Us</a>
+        </div>
+      </div>
+      <div class="image-content">
+        <img src="./assets/mk.png" alt="Student Image" />
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left Section - Logo -->
+        <div class="footer-logo">
+          <img class="footer-l" src="./assets/Logo.png" alt="CampusTech Logo" />
+        </div>
+
+        <!-- Center Section - Links and Contact Info -->
+        <div class="footer-links">
+          <!-- Resources Column -->
+          <div class="footer-column">
+            <p class="head">Resources</p>
+            <ul>
+              <li><a href="#">Solutions</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Us Column -->
+          <div class="footer-column">
+            <p class="head">Contact Us</p>
+            <p>support@campus.technology</p>
+            <p>+91-9980-747722</p>
+          </div>
+
+          <!-- Chat with Us Column -->
+          <div class="footer-column">
+            <p class="head">Chat with us</p>
+            <div class="social-icons">
+              <a href="#"
+                ><img src="./assets/facebook 1.png" alt="Facebook"
+              /></a>
+              <a href="#"
+                ><img src="./assets/instagram 1.png" alt="Instagram"
+              /></a>
+              <a href="#"><img src="./assets/twitter 1.png" alt="Twitter" /></a>
+              <a href=""> <img src="./assets/linkedin.png" alt="linkedin" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Section - Copyright and Design Credits -->
+      <div class="footer-bottom">
+        <p>© 2022, Kahan Technologies Pvt. Ltd.</p>
+        <p>Designed by <span>Grapdes</span></p>
+      </div>
+    </footer>
+  </body>
+</html>
